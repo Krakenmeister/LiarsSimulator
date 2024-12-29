@@ -99,6 +99,13 @@ export class Game {
 			roundNumber++;
 			console.log("\n");
 		}
+		for (let playerIndex: number = 0; playerIndex < this.players.length; playerIndex++) {
+			if (!this.players[playerIndex].isDead) {
+				console.log(
+					`\n[Game ${this.gameId}]: WINNER! Player ${playerIndex} (${this.config.playerNames[playerIndex]} #${this.players[playerIndex].id})`
+				);
+			}
+		}
 	}
 
 	public getConfig(): GameConfiguration {
