@@ -12,4 +12,5 @@ export type PublicGameState = {
 	players: PublicPlayer[];
 	action: Action;
 	table: Card;
+	wasLie?: boolean;
 };

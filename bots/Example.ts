@@ -52,6 +52,17 @@ export default class Example extends Player {
 			// In this case the action returned is ignored and the simulator forces a challenge
 		}
 
+		// When someone gets challenged, that action's veritacity is revealed publicly
+		for (let state of gameHistory) {
+			if ("wasLie" in state) {
+				if (state.wasLie) {
+					let lyingPlayer = state.players[0].playerId;
+				} else if (!state.wasLie) {
+					let truthingPlayer = state.players[0].playerId;
+				}
+			}
+		}
+
 		// An action with no cards played is equivalent to a challenge
 		let challengeAction: Action = {
 			cardIndicesPlayed: [],

@@ -79,6 +79,8 @@ export class Game {
 				console.log(`[Game ${this.gameId}]: Current chamber = ${this.players[currentlyActing].currentChamber}`);
 				console.log(`[Game ${this.gameId}]: ${this.players[currentlyActing].hand.toString()}`);
 
+				let wasLie: boolean = previousActorLying;
+
 				let playerAction: Action = this.players[currentlyActing].takeAction(this.gameHistory);
 				previousActorLying = this.resolveAction(playerAction, currentlyActing, lastToAct, previousActorLying);
 
@@ -90,6 +92,9 @@ export class Game {
 				currentlyActing = (currentlyActing + 1) % this.players.length;
 
 				continueRound = playerAction.cardIndicesPlayed.length > 0;
+				if (!continueRound) {
+					this.gameHistory[this.gameHistory.length - 2].wasLie = wasLie;
+				}
 			}
 			roundNumber++;
 			console.log("\n");
