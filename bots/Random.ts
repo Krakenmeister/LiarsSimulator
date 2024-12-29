@@ -14,6 +14,11 @@ export default class Random extends Player {
 			cardIndicesPlayed: [0],
 		};
 
+		// Challenge 25% of the time
+		if (Math.random() < 0.25) {
+			action = { cardIndicesPlayed: [] };
+		}
+
 		return action;
 	}
 }
