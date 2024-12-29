@@ -4,6 +4,16 @@ A console-based simulator for the popular game [Liar's Bar](https://store.steamp
 
 New scripts/strategies can be created in the bots folder and extend the Player class. A well-documented example can be found in bots/Example.ts. Run a simulation from Simulator.ts, and place the desired configuration settings there as well.
 
+## Installation Instructions
+
+1. Install [git](https://git-scm.com/downloads) and clone the repository with `git clone https://github.com/Krakenmeister/LiarsSimulator.git`
+
+2. Install [nodejs](https://nodejs.org/en/download)
+
+3. Install the [tsx package](https://www.npmjs.com/package/tsx) via npm with the command `npm install tsx`
+
+4. Run Simulator.ts with `tsx Simulator.ts`
+
 ## Example Output
 
 ```
