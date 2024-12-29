@@ -14,7 +14,7 @@ New scripts/strategies can be created in the bots folder and extend the Player c
 
 4. Run the simulator with `tsx Simulator.ts`
 
-## Example Output
+## Example Output (Excerpt)
 
 ```
 [Game 79909]: Round 3, Queen's Table
