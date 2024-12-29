@@ -12,7 +12,7 @@ New scripts/strategies can be created in the bots folder and extend the Player c
 
 3. Install the [tsx package](https://www.npmjs.com/package/tsx) via npm with the command `npm install tsx`
 
-4. Run Simulator.ts with `tsx Simulator.ts`
+4. Run the simulator with `tsx Simulator.ts`
 
 ## Example Output
 
