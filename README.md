@@ -6,8 +6,7 @@ New scripts/strategies can be created in the bots folder and extend the Player c
 
 ## Example Output
 
-````~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+```
 [Game 79909]: Round 3, Queen's Table
 
 
@@ -41,5 +40,5 @@ New scripts/strategies can be created in the bots folder and extend the Player c
 [Game 79909]: A Q A Q J
 [Game 79909]: Challenge!
 [Game 79909]: Player 2 (Random #198534) lied and has to shoot themselves!
-[Game 79909]: DEAD!```
-````
+[Game 79909]: DEAD!
+```
