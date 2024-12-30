@@ -40,6 +40,8 @@ export class Game {
 		}
 
 		this.players = [];
+		this.gameHistory = [];
+		this.table = Card.Joker;
 	}
 
 	public async initialize() {
