@@ -14,6 +14,7 @@ export default class Example extends Player {
 		let lastState: PublicGameState = gameHistory[gameHistory.length - 1];
 
 		// Each state has the current tabled/safe card
+		// Note that each round has an extra game state at the beginning with a no-action in order to convey the table card to the first player
 		let tableCard: Card = lastState.table;
 
 		// Each state has the action that player took

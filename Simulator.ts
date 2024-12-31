@@ -11,7 +11,7 @@ class Simulator {
 		}
 
 		await game.initialize();
-		game.runGame();
+		game.playGame();
 	}
 }
 
