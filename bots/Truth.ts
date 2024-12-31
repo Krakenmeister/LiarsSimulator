@@ -16,7 +16,7 @@ export default class Truth extends Player {
 		// Never lie, one card at a time
 		let safeCardIndex: number = -1;
 		for (let i = 0; i < this.hand.cards.length; i++) {
-			if (this.hand.cards[i] === tableCard) {
+			if (this.hand.cards[i] === tableCard || this.hand.cards[i] === Card.Joker) {
 				safeCardIndex = i;
 			}
 		}
